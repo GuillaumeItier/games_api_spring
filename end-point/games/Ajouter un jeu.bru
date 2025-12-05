@@ -1,0 +1,27 @@
+meta {
+  name: Ajouter un jeu
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:9000/game
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title":"Dark Souls 3",
+    "type":"Action RPG",
+    "publishAt":"2016-05-10",
+    "console":{
+      "id":1
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

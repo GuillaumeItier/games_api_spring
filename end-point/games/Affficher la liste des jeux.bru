@@ -1,0 +1,15 @@
+meta {
+  name: Affficher la liste des jeux
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:9000/games
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
